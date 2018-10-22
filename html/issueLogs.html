@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en-us">
+<head>
+
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>CCI Checker - Problem Logs</title>
+	<link rel="stylesheet" href="global_style.css">
+	<link rel="stylesheet" href="log.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+	<script src="logout.js"></script>
+	<script src="menu.js"></script>
+	<script src="auth.js"></script>
+	<script src="issueLogs.js"></script>
+	<script src="roomSelector.js"></script>	
+</head>
+
+<body> 
+	<div id="full">
+		<div id="options"></div>
+		<button id="menu" onClick="location.href='/main_menu.html';">Menu</button>
+		<button id="logout" onClick="logout()">Logout</button>
+		<label>Solved issues</label>
+		<input type="checkbox" name="Solved" id="solved">
+		<button id="getData" onClick="getData()">Get Data</button>
+		</div>
+		<div id="RecordOut" style="overflow-x:auto;"></div>
+		<div id="issueEdit" style="display:none">
+			<label>Enter a solution for this issue:</label>
+			<textarea id="solution" placeholder="Enter solution here..."></textarea>
+			<button id="submit" onClick="submitSolution()">Submit</button>
+		</div>
+	</div>
+</body>
+</html>

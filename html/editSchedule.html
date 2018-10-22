@@ -1,0 +1,81 @@
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" href="global_style.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+<script src="editSchedules.js"></script>	
+<script src="editRooms.js"></script>
+<script src="editTasks.js"></script>
+<body>
+	<div id="full">
+		<div id="Menu">
+			<button id="menu" onClick="location.href='/main_menu.html';">Menu</button>
+			<button id="logout" onClick="logout()">Logout</button>
+		</div>
+		<label>existing schedule:</label>
+		<input type="text" placeholder="Schedule ID" id="existingSchedule">
+		<div id="RoomCreator">
+			<label>Room ID:</label>
+			<input type="text" placeholder="Room ID" id="RoomID" required>
+			<label>Task ID:</label>
+			<input type="text" placeholder="Task ID" id="TaskID" required>
+			<label> Monday:</label>
+			<select id="Monday">
+				<option value=0>Neither</option>
+				<option value=1>AM</option>
+				<option value=2>PM</option>
+				<option value=3>Both</option>
+			</select>
+			<label> Tuesday:</label>
+			<select id="Tuesday">
+				<option value=0>Neither</option>
+				<option value=1>AM</option>
+				<option value=2>PM</option>
+				<option value=3>Both</option>
+			</select>
+			<label> Wednesday:</label>
+			<select id="Wednesday">
+				<option value=0>Neither</option>
+				<option value=1>AM</option>
+				<option value=2>PM</option>
+				<option value=3>Both</option>
+			</select>
+			<label> Thursday:</label>
+			<select id="Thursday">
+				<option value=0>Neither</option>
+				<option value=1>AM</option>
+				<option value=2>PM</option>
+				<option value=3>Both</option>
+			</select>
+			<label> Friday:</label>
+			<select id="Friday">
+				<option value=0>Neither</option>
+				<option value=1>AM</option>
+				<option value=2>PM</option>
+				<option value=3>Both</option>
+			</select>
+			<label> Saturday:</label>
+			<select id="Saturday">
+				<option value=0>Neither</option>
+				<option value=1>AM</option>
+				<option value=2>PM</option>
+				<option value=3>Both</option>
+			</select>
+			<label> Sunday:</label>
+			<select id="Sunday">
+				<option value=0>Neither</option>
+				<option value=1>AM</option>
+				<option value=2>PM</option>
+				<option value=3>Both</option>
+			</select>
+			<button id="editExistingSchedule" onClick="editExistingSchedule()">Edit Existing Schedule</button>
+			<button type="submit" id="newSchedule" onClick="makeSchedule()">Create New Schedule</button>
+		</div>
+		<div id="Rooms" style="overflow-x:auto;"></div>
+		</br>
+		<div id="Tasks" style="overflow-x:auto;"></div>
+		</br>
+		<div id="Schedule" style="overflow-x:auto;"></div>
+	</div>
+</body>
+</html>

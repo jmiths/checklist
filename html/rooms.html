@@ -1,0 +1,29 @@
+<html>
+<head>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="global_style.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+	<script src="roomSelector.js"></script>
+	<script src="checklistCreator.js"></script>
+	<script src="logout.js"></script>
+</head>
+<body>
+	<button id="menu" onClick="location.href='/main_menu.html';">Menu</button>
+	<button id="logout" onClick="logout()">Logout</button>
+	<div id="selector">
+		<label>Building:</label>
+		<select id="building" onchange="populateRoomSelect()">
+		</select>
+		<label>Room:</label>
+		<select id="room" onchange="storeRoomcode()">
+		</select>
+		<button type="button" id="load" onClick="alertSchedule()">Load Tasks</button>
+	</div>
+	<div id="checklist">
+		<p style="text-align:center">Your checklist will appear here</p>	
+	</div>
+	<button id="submit" onClick="submitChecklist()">Submit Checklist</button>
+	<div id="results">
+	</div>
+</body>
+</html>

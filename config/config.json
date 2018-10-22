@@ -1,0 +1,14 @@
+{
+  "development": {
+    "define": {
+      "timestamps": false,
+      "freezeTableName": true
+    },
+    "username": "checklist",
+    "password": "cs275",
+    "database": "checklist",
+    "host": "127.0.0.1",
+    "dialect": "mysql",
+    "timezone": "-04:00"
+  }
+}

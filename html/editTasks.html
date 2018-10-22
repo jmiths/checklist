@@ -1,0 +1,29 @@
+<html>
+<head>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="global_style.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+	<script src="editTasks.js"></script>
+	<title>CCI Checker - Edit Tasks</title>
+</head>
+
+<body>
+	<div id="full">
+		<div id="Menu">
+			<button id="menu" onClick="location.href='/main_menu.html';">Menu</button>
+			<button id="logout" onClick="logout()">Logout</button>
+		</div>
+		<div id="TaskCreator">
+			<label>ID of existing task (only for modifications):</label>
+			<input type="text" placeholder="Task ID" id="existingTask">
+			<label>Task Name:</label>
+			<input type="text" placeholder="Task Name" id="taskName" required>
+			<label>Task Instructions:</label>
+			<input type="text" placeholder="Longer Task Description" id="taskInstructions" required>
+			<button type="submit" id="editExistingTask" onClick="editExistingTask()">Edit Existing Task</button>
+			<button type="submit" id="newTask" onClick="makeTask()">Create New Task</button>
+		</div>
+		<div id="Tasks" style="overflow-x:auto;"></div>
+	</div>
+</body>
+</html>

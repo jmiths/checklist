@@ -1,0 +1,13 @@
+$.ajax({
+	type: 'POST',
+	url: 'issue/solve',
+	datatype: 'json',
+	data: { "issueid": issueid,
+		"solution": solution },
+	success: function (response) {
+		alert("Yay, it worked. Now delete this debug line.");
+	},
+	error: function (response, error) {
+		alert("Boo. Everything broke, you suck. Error: " + error);
+	}
+});

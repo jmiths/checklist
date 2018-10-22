@@ -1,0 +1,17 @@
+/* Table Formatting */
+table,th,td{
+	border: 1px solid black;
+}
+table{
+	border-collapse: collapse;
+	width: 100%;
+}
+td,th{
+	text-align: center;
+}
+tr:hover{background-color: #668CFF}
+tr:nth-child(even) {background-color: #A0C0FF}
+th{
+	background-color:#668CFF;
+	color: white;
+}

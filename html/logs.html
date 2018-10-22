@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en-us">
+<head>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>CCI Checker - Admin Logs</title>
+	<link rel="stylesheet" href="global_style.css">
+	<link rel="stylesheet" href="log.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+	<script src="logout.js"></script>
+	<script src="menu.js"></script>
+<<<<<<< HEAD
+	<script src="auth.js"></script>
+	<script src="log.js"></script>
+	<script src="roomSelector.js"></script>	
+</head>
+
+<body> 
+	<div id="full">
+		<div id="options"></div>
+		<button id="menu" onClick="location.href='/main_menu.html';">Menu</button>
+		<button id="logout" onClick="logout()">Logout</button>
+		<div id="LogSearch">
+			<input type="text" placeholder="User ID to limit. Blank for none." id="UID">
+			<label>Limit by Rooms:</label>
+			<input type="checkbox" name="Limit by Rooms" id="checkRooms"><br>
+			<label>Building:</label>
+			<select id="building" onchange="populateRoomSelect()"></select>
+			<br>
+			<label>Room:</label>
+			<select id="room" onchange="storeRoomcode()"></select>
+			<br>
+			<label>Start date:</label>
+			<input type="date" id="StartDate">
+			<br>
+			<label>End date:</label>
+			<input type="date" id="EndDate">
+			<button id="ShowData" onClick="getData()">Get Records</button>
+		</div>
+		<div id="RecordOut" style="overflow-x:auto;"></div>
+	</div>
+</body>
+</html>

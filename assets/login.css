@@ -1,0 +1,38 @@
+html {
+	background: url(Rush.jpg) no-repeat fixed;
+	background-position: center;
+	background-size: cover;
+	background-color: #00405A; /* If image doesn't fit */
+}
+
+html, #full {
+	height: 100%; /* help fill mobile page height */
+}
+
+#loginWindow {
+	background-color: #fefefe; /* Fallback color */
+	background-color: rgba(255,170,100,0.6);
+	border-radius: 25px; /* rounded edges */
+	margin: 20% auto 15% auto; /* 20% from the top, 15% from the bottom and centered */
+	border: 1px solid #644;
+	padding: 16px;
+	width: 66%;
+	display: flex;
+	flex-direction: column;
+}
+
+#result {
+	color: white;
+	display: none;
+	margin: auto 30% 20% 30%;
+	font-size: 1.5em;
+	padding: 16px;
+	background-color: #BBBBBB;
+	background-color: rgba(224,224,224,0.6);
+	border-radius: 25px;
+}
+
+#spaceFill {
+	float: left; /* help fill mobile page height */
+	width: 100%;
+}

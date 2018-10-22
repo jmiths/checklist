@@ -1,0 +1,31 @@
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" href="global_style.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+<script src="/editRooms.js"></script>	
+
+<body>
+	<div id="full">
+		<div id="Menu">
+			<button id="menu" onClick="location.href='/main_menu.html';">Menu</button>
+			<button id="logout" onClick="logout()">Logout</button>
+		</div>
+		<select id="roomEnable">
+			<option value="enabled">Enable</option>
+			<option value="disabled">Disable</option>
+		</select>
+		<label>existing room:</label>
+		<input type="text" placeholder="Room ID" id="existingRoom">
+	<button id="editExistingRoom" onClick="editExistingRoom()">Edit Existing Room</button>
+		<div id="RoomCreator">
+			<label>Building:</label>
+			<input type="text" placeholder="Building Name" id="Building" required>
+			<label>Room:</label>
+			<input type="text" placeholder="Room Number" id="Room" required>
+			<button type="submit" id="newRoom" onClick="makeRoom()">Create New Room</button>
+		</div>
+		<div id="Rooms" style="overflow-x:auto;"></div>
+	</div>
+</body>
+</html>

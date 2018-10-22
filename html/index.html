@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en-us">
+<head>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>CCI Checker Login</title>
+	<link rel="stylesheet" href="login.css">
+	<link rel="stylesheet" href="global_style.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+	<script src="login.js"></script>
+</head>
+
+<body onLoad="checkAuthed()">
+	<div id="full">
+		<div id="loginWindow" style="display:none">
+			<label><b>Username</b></label>
+			<input type="text" placeholder="Enter Username" id="username" required>
+
+			<label><b>Password</b></label>
+			<input type="password" placeholder="Enter Password" id="password" required>
+			
+			<button type="submit" id="login" onClick="login()">Login</button>
+		</div>
+		<div id="result">
+		</div>
+		<div id="spaceFill">
+		</div>
+	</div>
+</body>
+</html>
