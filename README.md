@@ -1,7 +1,7 @@
 # checklist
 Small app for creating per room checklists
 
-Was built with permissioning and accountability in mind. Was supposed to be fairly easy to add and remove API endpoints.
+Was built with permissioning and accountability in mind. Fairly easy to add and remove API endpoints.
 
 API Spec:
 
