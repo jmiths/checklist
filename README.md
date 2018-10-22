@@ -5,32 +5,31 @@ Was built with permissioning and accountability in mind. Was supposed to be fair
 
 API Spec:
 
-├── checkoff
-│   ├── complete
-│   ├── get
-│   └── review
-├── issue
-│   ├── create
-│   ├── get
-│   └── solve
-├── render
-│   └── menu
-├── room
-│   ├── able
-│   ├── add
-│   └── get
-├── schedule
-│   ├── add
-│   ├── get
-│   └── modify
-├── task
-│   ├── add
-│   ├── get
-│   └── modify
-└── user
-    ├── admin
-    ├── authed
-    ├── login
-    ├── logout
-    └── search
- 
+├── checkoff  
+│   ├── complete  
+│   ├── get  
+│   └── review  
+├── issue  
+│   ├── create  
+│   ├── get  
+│   └── solve  
+├── render  
+│   └── menu  
+├── room  
+│   ├── able  
+│   ├── add  
+│   └── get  
+├── schedule  
+│   ├── add  
+│   ├── get  
+│   └── modify  
+├── task  
+│   ├── add  
+│   ├── get  
+│   └── modify  
+└── user  
+    ├── admin  
+    ├── authed  
+    ├── login  
+    ├── logout  
+    └── search  
