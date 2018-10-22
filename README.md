@@ -28,8 +28,8 @@ API Spec:
 │   ├── get  
 │   └── modify  
 └── user  
-     ├── admin  
-     ├── authed  
-     ├── login  
-     ├── logout  
-     └── search  
+-   ├── admin  
+-   ├── authed  
+-   ├── login  
+-   ├── logout  
+-   └── search  
